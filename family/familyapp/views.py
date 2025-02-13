@@ -5,6 +5,7 @@ from rest_framework.response import Response
 from .serializers import MemberSerializer
 from .models import Member
 from rest_framework import generics
+from rest_framework import viewsets
 
 
 class MemberList(generics.ListCreateAPIView): 
@@ -21,6 +22,9 @@ class CreateMember(generics.CreateAPIView):
 
 
 
+class MemberViewSet(viewsets.ModelViewSet): 
+    queryset = Member.objects.all() 
+    serializer_class = MemberSerializer
 # class based view using apiview
 
 # class MemberList(APIView):

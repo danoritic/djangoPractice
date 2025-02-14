@@ -1,3 +1,4 @@
+
 """
 Django settings for family project.
 
@@ -25,6 +26,7 @@ SECRET_KEY = 'django-insecure-j#$uspvgc1e2*u=g8ul6redw5y_we=w8qtjcyz&$v6y95dudj(
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
 
 # ALLOWED_HOSTS = ['*']
 ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
@@ -114,6 +116,7 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+
 
 
 # Static files (CSS, JavaScript, Images)
